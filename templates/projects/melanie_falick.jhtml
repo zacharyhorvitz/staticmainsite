@@ -1,11 +1,11 @@
 {% extends "project_base.jhtml" %}
-{% block title %}Melanie Falick's Website{% endblock %}
+{% block title %}Quantifying Ideology in the Rhode Island Senate{% endblock %}
 {% block content %}
 <p>
-    In 2015, I redesigned Melanie Falick's blog-style Squarespace-based website.
-</p>
+   As Associate Director of Brown Political Review's Data Board, I wrote and oversaw data-driven projects and articles. In <u>Quantifying Ideology: Data-driven philosophical scales</u>, I applied dimensonality reduction to legislator voting records to tease out ideological clusters in the Rhode Island Senate.
+</p> 
 <p>
-    Website: <a href="http://melaniefalick.com">melaniefalick.com</a>
+    <a href="https://issuu.com/brownpoliticalreview/docs/bpr_fall_2018_issue_1/48">Article</a>
 </p>
-<img src='media/melanie_falick.png' height='70%' width='70%'/>
+<img src='media/bpr.png' height='70%' width='70%'/>
 {% endblock %}

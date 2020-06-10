@@ -1,13 +1,9 @@
 {% extends "project_base.jhtml" %}
-{% block title %}HVeto{% endblock %}
+{% block title %}CS1400 AI TRON Compeition -2nd Place{% endblock %}
 {% block content %}
 <p>
-    In the summer of 2016, I worked with the noise detection group at <a href="https://www.ligo.caltech.edu/">LIGO</a> (Laser Interfrometric Gravitational-wave Observatory). HVeto, or 'Hierarchical Veto', is an algorithm used by LIGO to rate how significantly correlated noise in channels measuring external sourses (for instance quantum or seismic) is to noise in the main gravitational wave detector. Signals can be filtered out using this measure of correlation. I helped to implement and optimize this method.
+   My submission to the CS1400 TRON competition placed second out of 22 teams. The class environment was a modified version of the original <a href='https://en.wikipedia.org/wiki/Tron_(video_game)'>TRON game</a>, where players compete to wall off their opponent.
+   My implementation appled MiniMax with Alpha-Beta pruning, and evalued states with the Voronoi heuristic weighted towards power-ups. To handle stochastic power-up effects, I modified the vanilla MiniMax algorithm into Expecti-Max by running multiple expansions for each random state transition, anding compute the value of an action in expectation.
 </p>
-<p>
-    Code: <a href="https://github.com/gwdetchar/hveto">Github</a>
-</p>
-<p>
-    Poster of my work: <a href="media/poster.pdf">link</a>
-</p>
+
 {% endblock %}

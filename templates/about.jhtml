@@ -1,22 +1,57 @@
 <div id='about-div' class='content-card card white active'>
-    <img id='me' src='media/outdoors.jpg' alt='Picture of me'/>
+    <img id='me' src='media/balloon.jpg' alt='Picture of me'/>
 
   <p class='no-bottom-margin'>
-    I am a recent graduate from Brown University, having received a Bachelor of Science in Applied Mathematics in May 2019. I will be participating in Bard College's Masters of Arts in Teaching program Sep 2019-2021. I am interested in computer science and math education, and using math and computer science to research topics in geology, fluid mechanics, and climate science.
+
+
+
+
+  My research interests are broad, but center on common-sense reasoning over language. My work ranges from computational humor to leveraging linguistic features in reinforcement learning environments.
+
+  I'm fascinated by the powerful inferences and creative solutions that can be drawn via applying the computational toolkit to real-world data.
+    </p>
+      <p>
+  I also love to code.
   </p>
-  <p>
-    During my junior and senior years at Brown, I spent a lot of my time as a teaching assistant for introductory computer science courses at Brown (I have TA'd 4 classes in total). In Fall 2018, I was a head teaching assistant for a new introductory computer science course (which I had also helped to design). The course was focused on providing an accessible path for students to learn applicable computer science while still leading into the upper level courses at Brown. 
+    <p>
+  Currently, I'm a graduate student researcher in George Konidaris' Intelligent Robot Lab. My full CV is available <a href="media/cv2020.pdf">here</a>.
+
   </p>
+
+ <p>
+    <ul>
+  <li><b>Interests</b></li>
+  <li>Machine Learning • NLP/NLG • Reinforcement Learning • Optimization • Algorithms  </li>
+  <li>  Information Retreival • Data Science • Software Development  • Cultural Anthropology</li>
+</ul>
+ </p>
+
+    
+    <ul>
+  <li><b>Education</b> (Brown University)</li>
+  <li>Sc.M. Computer Science (2020)</li>
+  <li>A.B. Computer Science (2019)</li>
+  <li>A.B. Anthropology (2019)</li>
+</ul>
+ </p>
+
+ 
+
+ <p>
+    <ul>
+  <li><b>Organizations</b></li>
+  <li>AI2 • Intelligent Robot Lab • RLAB Group • Brown University • ACLU • Daniel Research Lab • Empor.co</li>
+  <li> Brown Noser Satirical Newspaper • Brown Political Review • Data Board </li>
+</ul>
+ </p>
   <p>
-  I also enjoy web development, and have worked extensively with the <a href="https://p5js.org/">p5.js</a> processing library and Google Apps Script. You can see my projects in the Projects tab on the left.
-    <p class='no-margin'>Outside of math, coding, and teaching, I also:</p>
-    <ul id='stuff-I-do' class='no-margin'>
-      <li>Own a beautiful bearded dragon!{% if not mobile %} (see image) {% endif %}</li>
-      <li>Play classical piano.</li>
-      <li>Make rockets from scratch and launch them (with varied results).</li>
-      <li>Sleep.</li>
-      <li>Enjoy biking, hiking and backpacking (or anything outdoors, really).</li>
-      <li>Speak Portuguese!</li>
-    </ul>
-  <p>Please hire me.</p>
+    <ul>
+    <li><b>Programming</b></li>
+  <li>Python • Java • Matlab • C/C++ • SQL • Javascript • Scala </li>
+  <li><b>Tools</b></li>
+  <li>PyTorch • Tensorflow • Keras • Caffe •  Scikit-Learn • AWS • Google Cloud •  MTurk • OpenCV • D3 </li>
+</ul>
+ </p>
+  <p>  
+ Looking for a fantastic web developer? My friend <a href=https://www.eliasberkowitz.com/>Eli Berkowitz</a> has you covered.
 </div>

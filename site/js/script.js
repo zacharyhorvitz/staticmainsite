@@ -2,26 +2,30 @@ TESTING = false;
 
 function typeWord(word, div, I1, I2, done, continueDelay) {
 	letters = word.split('');
-	letterTyper = function(i) {
-		let letter = letters[i];
-		if (letter) {
-			div.append(letter);
-			if (letter != ' ') {
-				interval = I1;
-			}
-			else {
-				interval = I2;
-			}
-			setTimeout(function(){letterTyper(i+1);}, interval);
-		}
-		else {
-			div.text(word);
-			if (done != undefined) {
+	div.text(word);
+	if (done != undefined) {
 				setTimeout(done, continueDelay);
 			}
-		}
-	};
-	letterTyper(0);
+	// letterTyper = function(i) {
+	// 	let letter = letters[i];
+	// 	if (letter) {
+	// 		div.append(letter);
+	// 		if (letter != ' ') {
+	// 			interval = I1;
+	// 		}
+	// 		else {
+	// 			interval = I2;
+	// 		}
+	// 		setTimeout(function(){letterTyper(i+1);}, interval);
+	// 	}
+	// 	else {
+	// 		div.text(word);
+	// 		if (done != undefined) {
+	// 			setTimeout(done, continueDelay);
+	// 		}
+	// 	}
+	// };
+	// letterTyper(0);
 }
 
 function calcHeight(div) {
@@ -38,17 +42,20 @@ function initPage() {
 	nameDiv = $('#name-div');
 	nameDiv.addClass('new-name-card');
 	nameDiv.addClass('name-transition');
-	navItems = ['About', 'R\xE9sum\xE9', 'Projects', 'Contact'];
+	navItems = ['About','Contact', 'Research','Projects'] //, 'R\xE9sum\xE9']
 	addNavItem = function(i) {
 		navItem = navItems[i];
 		center = $('<div>');
 		center.addClass('nav-button unselectable'); //HERE
-		if (navItem != 'R\xE9sum\xE9') {
+		if (navItem != 'R\xE9sum\xE9') { 
 			center.addClass(navItem);
 		}
-		else {
+		else if(navItem == 'R\xE9sum\xE9') {
 			center.addClass('Resume');
 		}
+		// else if(navItem == 'Work') {
+		// 	center.addClass('Projects');
+		// }
 		navDiv.append(center);
 		if (navItem) {
 			time = calcTime(navItem, 60, 30);
@@ -76,9 +83,10 @@ function toNumb(thing) {
 function navTyped() {
 	navDiv = $('#nav-div');
 	$('div.nav-button.About').text('About');
-	$('div.nav-button.Resume').text('R\xe9sum\xe9');
+	// $('div.nav-button.Resume').text('R\xe9sum\xe9');
 	$('div.nav-button.Projects').text('Projects');
 	$('div.nav-button.Contact').text('Contact');
+	$('div.nav-button.Research').text('Research');
 	navDiv.addClass('nav-transition');
 	navDiv.width('');
 	buttons = navDiv.children('div.nav-button');
@@ -98,16 +106,35 @@ function calcTime(word, I1, I2) {
 
 function calculateHeights() {
 	about = $('#about-div');
+	contact = $('#contact-div');
 	resume = $('#resume-div');
 	projects = $('#projects-div');
-	contact = $('#contact-div');
+	research = $('#research-div');
 	topHeight = about.height() + toNumb(about.css('padding-bottom')) + toNumb(about.css('margin-bottom'));
 	aboutTrans = 0;
-	resumeTrans = topHeight + 2 * toNumb(resume.css('margin-top'));
-	projectsTrans = resumeTrans + resume.height() + 2 * toNumb(projects.css('margin-top')) +
-		toNumb(resume.css('margin-bottom')) + toNumb(resume.css('padding-bottom'));
-	contactTrans = projectsTrans + projects.height() + 2 * toNumb(contact.css('margin-top')) + 
-		toNumb(projects.css('margin-bottom')) + toNumb(resume.css('padding-bottom'));
+	// resumeTrans = topHeight + 2 * toNumb(resume.css('margin-top'));
+
+
+		// toNumb(about.css('margin-bottom')) + toNumb(about.css('padding-bottom'));
+	
+	researchTrans = aboutTrans + about.height() + 2 * toNumb(research.css('margin-top')) + toNumb(about.css('margin-bottom')) + toNumb(about.css('padding-bottom'));
+	//	toNumb(about.css('margin-bottom')) + toNumb(about.css('padding-bottom')); //topHeight + 2*toNumb(research.css('margin-top')); // 900
+	
+	projectsTrans =  50 + researchTrans + 2*toNumb(projects.css('margin-top')) + toNumb(projects.css('padding-top')) + toNumb(research.css('padding-bottom'))  + 2*toNumb(research.css('margin-bottom'))+research.height(); //1500
+
+
+	contactTrans = projectsTrans + projects.height() + 2 * toNumb(projects.css('margin-top')) + toNumb(projects.css('margin-bottom')) + toNumb(projects.css('padding-bottom')); //50 + researchTrans + 2*toNumb(contact.css('margin-top')) + toNumb(contact.css('padding-top')) + toNumb(projects.css('padding-bottom'))  + 2*toNumb(projects.css('margin-bottom'))+projects.height(); //1500//2000 //aboutTrans + about.height() + toNumb(contact.css('margin-top')) + 
+
+
+
+
+	// publishTrans = 1200
+
+	//aboutTrans + about.height() + 2 * toNumb(projects.css('margin-top')) +
+	//	toNumb(about.css('margin-bottom')) + toNumb(about.css('padding-bottom'));
+
+	// publishTrans = contactTrans + contact.height() + 2 * toNumb(research.css('margin-top')) + 
+	// 	toNumb(projects.css('margin-bottom')) + toNumb(contact.css('padding-bottom'));
 }
 
 function nameAndNavDone() {
@@ -156,6 +183,9 @@ function openDiv(x) {
 			else if (button.text() == 'Projects') {
 				translateHeight = projectsTrans;
 			}
+			else if (button.text() == 'Research') {
+				translateHeight = researchTrans;
+			}
 			else {
 				translateHeight = contactTrans;
 			}
@@ -190,7 +220,9 @@ function projectTransition(to_id) {
 
 function start(name) {
 	//Get doc dimensions and name/nav divs and templates
+
 	doc = $(document);
+	// document.body.style.backgroundImage = "url('../media/background.jpg')";
 	docWidth = doc.width();
 	docHeight = doc.height();
 	if (docWidth < 500 || docHeight < 440) {
@@ -235,5 +267,24 @@ function start(name) {
 	        typeWord(name, nameDiv, 120, 40, initPage, 150);
 	    }, 100);
 	}
+
+	var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
 	
 }

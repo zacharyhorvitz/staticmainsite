@@ -1,14 +1,15 @@
 {% extends "project_base.jhtml" %}
-{% block title %}Life Percent Website{% endblock %}
+{% block title %} ACLU Tech for Libery: Mapping Stop-And-Frisk, Arrest Data in Massachusetts
+{% endblock %}
 {% block content %}
 <p>
-    This is the first website I ever made; it is a static HTML/Javascript/CSS site. It shows the user the percentage of their life that has passed.
+
+As an intern with the Tech For Liberty Team, I analyzed Boston Police Department stop-and-frisk data and Massauchusetts low-level arrest records obtained by the ACLU of Massachusetts. Additionally, I built internal web tools to visualize these records, and collate them with external data sources (e.g. Census data).
+
+My work was part of a broader push by the ACLU to elucidate <a href='https://www.nyclu.org/en/publications/shattered-continuing-damaging-and-disparate-legacy-broken-windows-policing-new-york'>'broken windows'</a> policing tactics, which disproportionately target marginalized communities, and people of color.
 </p>
+
+
 <p>
-    Website: <a href="http://yourlifepercent.com">yourlifepercent.com</a>
 </p>
-<p>
-    Code: <a href="https://github.com/berkowitze/lifepercent">Github</a>
-</p>
-<img src='media/life-percent.png' height='70%' width='70%'/>
 {% endblock %}

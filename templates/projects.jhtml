@@ -1,6 +1,6 @@
 <div class='content-card card white' id='projects-div'>
   <div class='project toggled' id='project-main'>
-      <img src='media/rocketshell.jpg' id='rocket-img' alt='Rocket shell image'/>
+      <img src='media/fallible.jpg' id='fallible' alt='Which kirk?'/>
       {% if mobile %}<hr/>{% endif %}
     <ul id='project-list'>
     {% for id, path, descr in config.projects %}
@@ -15,6 +15,10 @@
       {% endif %}
     {% endfor %}
     </ul>
+        <p>
+ I also write <a href='http://thenoser.com/staff/Zachary-Horvitz'>satire</a> for the Brown Noser Satirical Newspaper!
+
+  </p>
   </div>
   {% if not mobile %}
     {% for id, path, _ in config.projects %}
@@ -25,4 +29,7 @@
     </div>
     {% endfor %}
   {% endif %}
+
+
+
 </div>

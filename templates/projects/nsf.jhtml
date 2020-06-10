@@ -1,0 +1,34 @@
+{% extends "project_base.jhtml" %}
+{% block title %}Negotiating the Scientific: The Reconciliation of Top-Down and Bottom-Up Forces in the NSF),
+{% endblock %}
+{% block content %}
+<p>
+The purpose of our paper is to chart how the National Science Foundation’s
+practices are crafted from both the “bottom-up forces” of the scientific community and
+the “top-down” decision-making that originates from other parts of the state.
+Specifically, we will explore how conflicting interpretations and goals interface, and how
+they are ultimately are reconciled, then embedded in organizational policy. To understand these processes, <b>we interviewed individuals ranging from Computer Science professors to former Assisant Diectors of the NSF</b>.</p>
+
+<p>
+We also applied a data-driven lens to piece together how the NSF's grand awarding practices materialize in identifiable trends. For example, we analyzed frequent n-grams in NSF grant data. A sample visualization of some of our results from the CISE Directorate can be found <a href='https://zacharyhorvitz.github.io/NSF-grant-analysis/visualizer.html'>here</a>.</p>
+
+<p>
+
+Ultimately, we found that ranking members of the organization are motivated by a deep sense of
+accountability to the scientific community, and interpret the advancement of knowledge
+as something innately in national interest. However, the NSF must contend with entities (e.g. Congress) that do not necessarily interpret a clear relationship between the two. Thus, the NSF
+must continually assure other parties of the the value in basic research and draft strategic
+priorities that align with the Executive Office. Through the language of “Broader
+Impact” and “Technical Merit” the foundation can simultaneously establish its role as a
+bastion of science, and as an influential organization that shapes society for the better.
+These terms also leave much to the interpretation of the scientific community, and
+provide breathing room within this complex political landscape.
+</p>
+
+<p><b><a href=''>Paper Unavailable (Pending Authorization)</a></b></a>
+</p>
+
+
+<p>
+</p>
+{% endblock %}

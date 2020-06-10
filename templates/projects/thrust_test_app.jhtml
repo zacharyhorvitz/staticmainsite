@@ -1,11 +1,17 @@
 {% extends "project_base.jhtml" %}
-{% block title %}Thrust Test App{% endblock %}
+{% block title %}Examining Regional Abortion Discourse in America Via Twitter{% endblock %}
 {% block content %}
 <p>
-    Me and two friends have become very interested in rocket technology. We began testing different solid fuel mixtures in 2017 to find a fuel with optimal thrust. In addition, we worked on automatic parachute deployment on the rocket and have an goal of using actuated canards to keep rockets stable during ascent. To faciliate the thrust test process, I built a web app to easily log new tests from our test stand and visualize the results.
+
+
+    For David Kerter's graduate Anthropology Demography course, I collected over 200 thousand geo-tagged Twitter posts related to "Abortion," and clustered regions at the state and county level. My results indicate that Twitter discourses correlate with both public support for legalizing abortion at the state level and reproductive policy at the city level. These discourses appear to capture the circulation of tweets through ideological networks, and messages that articulate opinions through pro-life and pro-choice frames. Additionally, my analyses indicates that these data-driven approaches, while far from perfect, have the potential to augment existing demographic data, and aid advocacy groups by identifying regions with dissonance between grassroots sentiment and law.
+
 </p>
 <p>
-    Code: <a href="https://github.com/IzzyBrand/explosive-bakery">Github</a>
+
+    <a href="media/anth2300.pdf">Paper</a></p>
+    <p><a href="https://docs.google.com/presentation/d/1EgFkwR37hVs-A-TqO_Jfln_qHewTQUDmDG9qsM0xDHw/edit?usp=sharing">Slides</a>
+
+
 </p>
-<img src='media/thrust-test.png' height='70%' width='70%'/>
 {% endblock %}

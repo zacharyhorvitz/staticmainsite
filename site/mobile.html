@@ -1,362 +1,614 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<!-- Source: Codebase by the absolutely inimitable Eli Berkowitz: https://github.com/berkowitze/staticmainsite
+ -->
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <link rel='stylesheet' type='text/css' href='css/materialize.min.css' media='screen,projection'>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel='stylesheet' type='text/css' href='css/style.css'/>
   <script type='text/javascript' src='js/jquery-2.1.4.min.js'></script>
   <script type='text/javascript' src='js/script.js'></script>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
   <base target="_blank">
-  <title>Elias Berkowitz</title>
+  <title>Zachary Horvitz</title>
   <link rel="shortcut icon" type="image/png" href='favicon.png'>
-  <link rel='stylesheet' type='text/css' href='css/mobile.css'/>
-  <meta name='description' content="Elias Berkowitz personal website">
-  <meta name="author" content="Elias Berkowitz">
-  <meta name="keywords" content="Elias Berkowitz, Berkowitz, Eli Berkowitz, Programming, Applied Mathematics, Computer Science Education, Education">
+  <meta name='description' content="Zachary Horvitz personal website">
+  <meta name="author" content="Zachary Horvitz">
+  <meta name="keywords" content="Zachary Horvitz, Horvitz, Zachary Horvitz, Machine Learning, NLG, NLP, Deep Learning, Optimization, Computer Science, Anthropology">
   <script>
-    (function(i,s,o,g,r,a,m){i.GoogleAnalyticsObject=r;i[r]=i[r]||function(){
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m);
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-72224223-1', 'auto');
     ga('send', 'pageview');
   </script>
 </head>
 <body class='row'>
+  <div id='bg'></div>
   <div class='container-div'>
-    <div id='header'>
-      <div id='name-div' class='name-div'>Elias Berkowitz</div>
-      <div id='navbar'>
-        <div class='navitem'><span data-target='#about-div' target='_self'>About</a></div>
-        <div class='navitem'><span data-target='#resume-div' target='_self'>R&eacute;sum&eacute;</a></div>
-        <div class='navitem'><span data-target='#projects-div' target='_self'>Projects</a></div>
-        <div class='navitem'><span data-target='#contact-div' target='_self'>Contact</a></div>
+    <div id='name-div' class='name-div'></div><br class='unselectable'/>
+    <div class='absolute-hide' id='name-template'>ZACHARY HORVITZ</div>
+    <div id='nav-container'>
+      <div id='nav-div'></div>
+      <div id='nav-template' class='absolute-hide'>
+        
+        <div class='nav-button'>About</div>
+        
+        <div class='nav-button'>Resum&eacute;</div>
+        
+        <div class='nav-button'>Research</div>
+        
+        <div class='nav-button'>Work</div>
+        
+        <div class='nav-button'>Contact</div>
+        
       </div>
     </div>
-    <div id='content-div'>
+    <div id='content-div' style='display:none;'>
       
-        <h5>About</h5>
         <div id='about-div' class='content-card card white active'>
-    <img id='me' src='media/outdoors.jpg' alt='Picture of me'/>
+    <img id='me' src='media/balloon.jpg' alt='Picture of me'/>
 
   <p class='no-bottom-margin'>
-    I am a recent graduate from Brown University, having received a Bachelor of Science in Applied Mathematics in May 2019. I will be participating in Bard College's Masters of Arts in Teaching program Sep 2019-2021. I am interested in computer science and math education, and using math and computer science to research topics in geology, fluid mechanics, and climate science.
+
+
+
+
+  My research interests are broad, but center on common-sense reasoning over language. My work ranges from computational humor to leveraging linguistic features in reinforcement learning environments.
+
+  I'm fascinated by the powerful inferences and creative solutions that can be drawn via applying the computational toolkit to real-world data.
+    </p>
+      <p>
+  I also love to code.
   </p>
-  <p>
-    During my junior and senior years at Brown, I spent a lot of my time as a teaching assistant for introductory computer science courses at Brown (I have TA'd 4 classes in total). In Fall 2018, I was a head teaching assistant for a new introductory computer science course (which I had also helped to design). The course was focused on providing an accessible path for students to learn applicable computer science while still leading into the upper level courses at Brown. 
+    <p>
+  Currently, I'm a graduate student researcher in George Konidaris' Intelligent Robot Lab. My full CV is available <a href="media/cv2020.pdf">here</a>.
+
   </p>
+
+ <p>
+    <ul>
+  <li><b>Interests</b></li>
+  <li>Machine Learning • NLP/NLG • Reinforcement Learning • Optimization • Algorithms  </li>
+  <li>  Information Retreival • Data Science • Software Development  • Cultural Anthropology</li>
+</ul>
+ </p>
+
+    
+    <ul>
+  <li><b>Education</b> (Brown University)</li>
+  <li>Sc.M. Computer Science (2020)</li>
+  <li>A.B. Computer Science (2019)</li>
+  <li>A.B. Anthropology (2019)</li>
+</ul>
+ </p>
+
+ 
+
+ <p>
+    <ul>
+  <li><b>Organizations</b></li>
+  <li>AI2 • Intelligent Robot Lab • RLAB Group • Brown University • ACLU • Daniel Research Lab • Empor.co</li>
+  <li> Brown Noser Satirical Newspaper • Brown Political Review • Data Board </li>
+</ul>
+ </p>
   <p>
-  I also enjoy web development, and have worked extensively with the <a href="https://p5js.org/">p5.js</a> processing library and Google Apps Script. You can see my projects in the Projects tab on the left.
-    <p class='no-margin'>Outside of math, coding, and teaching, I also:</p>
-    <ul id='stuff-I-do' class='no-margin'>
-      <li>Own a beautiful bearded dragon!</li>
-      <li>Play classical piano.</li>
-      <li>Make rockets from scratch and launch them (with varied results).</li>
-      <li>Sleep.</li>
-      <li>Enjoy biking, hiking and backpacking (or anything outdoors, really).</li>
-      <li>Speak Portuguese!</li>
-    </ul>
-  <p>Please hire me.</p>
+    <ul>
+    <li><b>Programming</b></li>
+  <li>Python • Java • Matlab • C/C++ • SQL • Javascript • Scala </li>
+  <li><b>Tools</b></li>
+  <li>PyTorch • Tensorflow • Keras • Caffe •  Scikit-Learn • AWS • Google Cloud •  MTurk • OpenCV • D3 </li>
+</ul>
+ </p>
+  <p>  
+ Looking for a fantastic web developer? My friend <a href=https://www.eliasberkowitz.com/>Eli Berkowitz</a> has you covered.
 </div>
       
-        <h5>Resum&eacute;</h5>
         <div id='resume-div' class='content-card card white'>
   <p>My r&eacute;sum&eacute; can be accessed <a href='media/Resume.pdf' target='_blank'>here.</a>
 </div>
       
-        <h5>Projects</h5>
+        <div id='research-div' class='content-card card white active'>
+  <p class='no-bottom-margin'>
+
+
+  <b>Research</b>
+
+  </p>
+
+
+<button class="accordion">Linguistic Priors for Multi-Task Reinforcement Learning - <i>Ongoing</i> </button>
+<div class="panel">
+  <p><b>Collaborators:</b> Aansh Shah, Naveen Srinivasan, Neev Parikh, George Konidaris</p>
+ <p><i>(Ongoing)</i></p>
+</div>
+
+   
+
+<button class="accordion"> Context-Driven Satirical Headline Generation  - <i>ACL 2020 FigLang Workshop (Talk)</i></button>
+<div class="panel">
+  <p><b>Authors:</b> Zachary Horvitz, Nam Do, Michael L. Littman</p>
+  <p>While mysterious, humor likely hinges on an interplay of entities, their relationships, and cultural connotations. Motivated by the importance of context in humor, we consider methods for constructing and leveraging contextual representations in generating humorous text. Specifically, we study the capacity of transformer-based architectures to generate
+funny satirical headlines, and show that both
+language models and summarization models can be fine-tuned to regularly generate headlines that people find funny. Furthermore, we find that summarization models uniquely support satire-generation by enabling the generation of topical humorous text. Outside of our formal study, we note that headlines generated by our model were accepted via a competitive process into a satirical newspaper, and one headline was ranked as high or better than 73%
+of human submissions. As part of our work,
+we contribute a dataset of over 15K satirical headlines paired with ranked contextual information from news articles and Wikipedia.</p>
+</div>
+
+   
+  <button class="accordion">Entity-Augmented Language Models with Mental State Inference for Common-sense Story Prediction - <i>Unpublished</i> </button>
+<div class="panel">
+
+ <p><b>Collaborators:</b> Yejin Choi, Maarten Sap, Antoine Bosselut</p>
+<ul>
+<li>• As Research Intern at AI2, investigated neural networks for common-sense story generation </li>
+<li>• Integrated pipeline for extracting sequences of events from text, collating with Event2Mind corpus</li>
+<li>• Developed ELMO based entity-augmented neural architecture that updates embeddings based on mental state inference for better generations</li>
+</li>
+</ul>
+</div>
+ 
+   
+  <button class="accordion">FigureSeer: Parsing Result-Figures in Research Papers - <i>ECCV 2016</i></button>
+<div class="panel">
+
+ <p><b>Authors:</b> Noah Siegel, Zachary Horvitz, Roie Levin, Santosh Divvala, and Ali Farhadi</p>
+
+<p>‘Which are the pedestrian detectors that yield a precision above 95% at 25% recall?’ Answering such a complex query involves identifying and analyzing the results reported in figures within several research papers. Despite the availability of excellent academic search engines, retrieving such information poses a cumbersome challenge today as these systems have primarily focused on understanding the text content of scholarly documents. In this paper, we introduce FigureSeer, an end-to-end framework for parsing result-figures, that enables powerful search and retrieval of results in research papers. Our proposed approach automatically localizes figures from research papers, classifies them, and analyses the content of the result-figures. The key challenge in analyzing the figure content is the extraction of the plotted data and its association with the legend entries. We address this challenge by formulating a novel graph-based reasoning approach using a CNN-based similarity metric. We present a thorough evaluation on a real-word annotated dataset to demonstrate the efficacy of our approach.</p>
+</div>
+
+ </p>
+
+
+
+ <p class='no-bottom-margin'>
+  <b>Teaching</b> 
+</p>
+ <button class="accordion">Deep Learning - <i>Graduate Head TA (2019), TA (2018)</i> </button>
+<div class="panel">
+<ul>
+<li>• Graduate Head TA for Daniel Ritchie’s 360+ person class </li>
+<li>• Covered topics and co-wrote assignments ranging from Perceptrons and CNNs to SOTA including Graph NNs and
+Transformers</li>
+<li>• Oversaw migration to Tensorflow2.0, addition of conceptual questions, and
+introduction of new assignments</li>
+</li>
+</ul>
+
+<p>Anonymous Feedback - <i>'Zachary Horvitz was always so helpful, always knew the concepts :) No question was stupid and no questions were hard for him to answer. He really made me enjoy the class and understand the concepts.'</i> <p>
+</div>
+
+  <button class="accordion">Computational Linguistics - <i> TA (2018)</i> </button>
+<div class="panel">
+<ul>
+<li>Undergraduate TA for Eugene Charniak's seminar</li>
+</li>
+</ul>
+</div>
+
+
+
+
+</div>
+      
         <div class='content-card card white' id='projects-div'>
   <div class='project toggled' id='project-main'>
-      <img src='media/rocketshell.jpg' id='rocket-img' alt='Rocket shell image'/>
-      <hr/>
+      <img src='media/fallible.jpg' id='fallible' alt='Which kirk?'/>
+      
     <ul id='project-list'>
     
-      <li>Web system for Bard College's Citizen Science program (<span data-target='project-citsci' class='project-link'>see more</span>).</li>
-      
-        <div class='project hidden-project' id='project-citsci'>
-          
-          
-
-<h5>
-Web system for Bard College's Citizen Science program
-</h5>
-
-<p>
-    Over the winter break, all Bard College firstyears participate in Citizen Science. Every student, when home for the break, takes a water sample and brings it back to campus to be analyzed (by the students themselves). Throughout the process, they upload images, location data, and observations.
-</p>
-<p>
-    I wrote this web system to faciliate the entire process, from data upload to visualization. It is built using Flask on Google Cloud Platform (App Engine, Cloud SQL (Postgres), Storage). The web system utilizes a wide array of both frontend architecture (image editing, file dragging, downloading, uploading, and zipping, mapping tools, etc.) and backend architecture (CAS authentication, image compression and conversion, etc.). In addition, the system uses the ArcGIS Javascript API to give the public an interface to view the data.
-</p>
-<p>
-    Data map: <a href="https://citsciwater.bard.edu/map">citsciwater.bard.edu/map</a>
-</p>
-<p>
-    <img src='media/citsci.png' width="30%" height="30%"/>
-</p>
-<p>
-</p>
-
-          
-        </div>
-        <hr>
+      <li>CORD-19 Kaggle Challenge (2020) (<span data-target='project-citsci' class='project-link'>see more</span>).</li>
       
     
-      <li>Grading app for computer science courses at Brown University [Flask] (<span data-target='project-grading-app' class='project-link'>see more</span>).</li>
-      
-        <div class='project hidden-project' id='project-grading-app'>
-          
-          
-
-<h5>CS Course Grading App</h5>
-
-<p>
-    I developed a grading app for use in <a href="https://cs.brown.edu/courses/csci0111/">CSCI0111 in Fall 2018</a>, a course I was a head TA of and helped develop. The app allows computer science courses to handle student handin, automated and commented grading, sending grade reports to students, and manage grades in a streamlined, customizable, and FERPA-compliant manner.
-</p>
-<p>The software was also used for <a href="http://cs.brown.edu/courses/csci1470/">CSCI 1470 in Fall 2019</a>, with 40 teaching assistants grading handins for 400 students.</p>
-<p>
-  <a href="https://www.youtube.com/watch?v=sIEIbEAwyfM">Demo Video</a>
-</p>
-<img src='media/grading-app.png' height='70%' width='70%'/>
-
-          
-        </div>
-        <hr>
+      <li>CS2951-O Transportation Logistics, 1st Place Local Search Algorithm (2020) (<span data-target='project-exosim' class='project-link'>see more</span>).</li>
       
     
-      <li>Create and observe your own solar system [p5.js] (<span data-target='project-exosim' class='project-link'>see more</span>).</li>
-      
-        <div class='project hidden-project' id='project-exosim'>
-          
-          
-
-<h5>
-Exosim
-</h5>
-
-<p>
-    This website (written in pure Javascript using the processing p5.js library) allows you to create your own solar system. You can see the planets orbiting their star - all objects interact with each other gravitationally. Additionally, you can see what the data measured on Earth to observe the exoplanets would look like as the planets block the light of their star when they pass in front of it.
-</p>
-<p>
-    Website: <a href="https://exosim.netlify.com">exosim.netlify.com</a>
-</p>
-<p>
-    Code: <a href="https://github.com/berkowitze/exosim">Github</a>
-</p>
-<p>
-    <img src='media/exosim.png' width="50%" height="50%"/>
-</p>
-<p>
-</p>
-
-          
-        </div>
-        <hr>
+      <li>Star Trek GPT-2 (2019) (<span data-target='project-grading-app' class='project-link'>see more</span>).</li>
       
     
-      <li>Web app developed to provide an API for testing rocket motors and visualizing thrust results [Flask, Raspberry Pi] (<span data-target='project-thrust-test' class='project-link'>see more</span>).</li>
-      
-        <div class='project hidden-project' id='project-thrust-test'>
-          
-          
-
-<h5>Thrust Test App</h5>
-
-<p>
-    Me and two friends have become very interested in rocket technology. We began testing different solid fuel mixtures in 2017 to find a fuel with optimal thrust. In addition, we worked on automatic parachute deployment on the rocket and have an goal of using actuated canards to keep rockets stable during ascent. To faciliate the thrust test process, I built a web app to easily log new tests from our test stand and visualize the results.
-</p>
-<p>
-    Code: <a href="https://github.com/IzzyBrand/explosive-bakery">Github</a>
-</p>
-<img src='media/thrust-test.png' height='70%' width='70%'/>
-
-          
-        </div>
-        <hr>
+      <li>Examining Regional Abortion Discourse in America via Twitter Data (2019) (<span data-target='project-thrust-test' class='project-link'>see more</span>).</li>
       
     
-      <li>Work for LIGO (Laser Interfrometric Gravitational-Wave Observatory) [Python] (<span data-target='project-hveto' class='project-link'>see more</span>).</li>
-      
-        <div class='project hidden-project' id='project-hveto'>
-          
-          
-
-<h5>HVeto</h5>
-
-<p>
-    In the summer of 2016, I worked with the noise detection group at <a href="https://www.ligo.caltech.edu/">LIGO</a> (Laser Interfrometric Gravitational-wave Observatory). HVeto, or 'Hierarchical Veto', is an algorithm used by LIGO to rate how significantly correlated noise in channels measuring external sourses (for instance quantum or seismic) is to noise in the main gravitational wave detector. Signals can be filtered out using this measure of correlation. I helped to implement and optimize this method.
-</p>
-<p>
-    Code: <a href="https://github.com/gwdetchar/hveto">Github</a>
-</p>
-<p>
-    Poster of my work: <a href="media/poster.pdf">link</a>
-</p>
-
-          
-        </div>
-        <hr>
+      <li>NeurIPs Reproducibility Challenge:  "Sample-Efficient Deep Reinforcement Learning via Episodic Backward Update" (2019) (<span data-target='project-oakwood' class='project-link'>see more</span>).</li>
       
     
-      <li>Internal-use web apps for Oakwood Friends School [Google Apps Script] (<span data-target='project-oakwood' class='project-link'>see more</span>).</li>
-      
-        <div class='project hidden-project' id='project-oakwood'>
-          
-          
-
-<h5>Work for Oakwood Friends School</h5>
-
-<p>
-    In 2015, I worked for Oakwood Friends School, the Quaker school in upstate New York I had just graduated from. I developed a series of web apps to facilitate student and faculty life using Google Web Apps. Mock-ups of the apps are linked below.
-    <li>
-        <a href="https://script.google.com/macros/s/AKfycbwQq3rq1L5T7SZcqMpY4GRm45uqx-1MBKhIjGg6Oek6o9_bwPI/exec">Student Event Signup Page</a>: allows students to signup for organized events.
-    </li>
-    <li>
-        <a href="https://script.google.com/macros/s/AKfycbwW1BqWkC3ORfZ7iYBQV19dtC1gMT3RXR7fXEpj4OGdsJ6zWZxA/exec">Faculty Event Management Page</a>: Allows faculty to create, organize, and manage student events.
-    </li>
-    <li>
-        <a href="https://script.google.com/macros/s/AKfycbzSfsieFEkYHI7J9qq20v6l-42bJ_HpvRLd1crMBEIlDLl4Gb8/exec">Faculty Vehicle Signout Form</a>: allows faculty to choose a school vehicle to checkout for a length of time of their choice.
-    </li>
-    <li>
-        <a href="https://script.google.com/macros/s/AKfycbxF4snfGppPXvRWeT5vc7wxwuHrEsPsqNyJtmPG1iAZE-WNRTHo/exec">Faculty Reimbursement Request Form</a>: allows faculty to request reimbursement for purchases.
-    </li>
-    <li>
-        <a href="https://script.google.com/macros/s/AKfycbw3lV3IruKJKck9Vkk_1aMEjyD82kJvPiEP51NFzQ/exec">Student Bank</a>: allows faculty to internally manage student finances.
-    </li>
-</p>
-<p>
-    Code: <a href="https://drive.google.com/drive/folders/0B_JBWyS9f9RlfmdOSFRJbFR1UWdnU0RJSlkwaFdyQi1TaEM0aF9UM2NGVzA0ZFRwQ3UtMms?usp=sharing">Google Drive</a>
-</p>
-
-          
-        </div>
-        <hr>
+      <li>Negotiating the Scientific: The Reconciliation of Top-Down and Bottom-Up Forces in the NSF (2019) (<span data-target='project-nsf' class='project-link'>see more</span>).</li>
       
     
-      <li>This website [Python, Jinja, Netlify] (<span data-target='project-this_site' class='project-link'>see more</span>).</li>
-      
-        <div class='project hidden-project' id='project-this_site'>
-          
-          
-
-<h5>This site</h5>
-
-<p>
-    This site is built using Python into a static site. You can see the code for it on Github.
-</p>
-<p>
-    Code: <a href="https://github.com/berkowitze/staticmainsite">Github</a>
-</p>
-<p>
-    Website: <a href="http://www.eliasberkowitz.com">eliasberkowitz.com</a>
-</p>
-
-          
-        </div>
-        <hr>
+      <li>Uber Developed: The Ride Hailing Business in South Africa (2018) (<span data-target='project-this_site' class='project-link'>see more</span>).</li>
       
     
-      <li>Redesign of Melanie Falick's website [Squarespace] (<span data-target='project-melanie-falick' class='project-link'>see more</span>).</li>
-      
-        <div class='project hidden-project' id='project-melanie-falick'>
-          
-          
-
-<h5>Melanie Falick's Website</h5>
-
-<p>
-    In 2015, I redesigned Melanie Falick's blog-style Squarespace-based website.
-</p>
-<p>
-    Website: <a href="http://melaniefalick.com">melaniefalick.com</a>
-</p>
-<img src='media/melanie_falick.png' height='70%' width='70%'/>
-
-          
-        </div>
-        <hr>
+      <li>Quantifying Ideology in the Rhode Island Senate (2018) (<span data-target='project-melanie-falick' class='project-link'>see more</span>).</li>
       
     
-      <li>Life Percent Website: Shows the user the percent of their life that has passed [Javascript] (<span data-target='project-life-percent' class='project-link'>see more</span>).</li>
+      <li>CS1400 TRON Competition, 2nd Place (2018) (<span data-target='project-hveto' class='project-link'>see more</span>).</li>
       
-        <div class='project hidden-project' id='project-life-percent'>
-          
-          
-
-<h5>Life Percent Website</h5>
-
-<p>
-    This is the first website I ever made; it is a static HTML/Javascript/CSS site. It shows the user the percentage of their life that has passed.
-</p>
-<p>
-    Website: <a href="http://yourlifepercent.com">yourlifepercent.com</a>
-</p>
-<p>
-    Code: <a href="https://github.com/berkowitze/lifepercent">Github</a>
-</p>
-<img src='media/life-percent.png' height='70%' width='70%'/>
-
-          
-        </div>
-        <hr>
+    
+      <li>ACLU Tech for Libery: Mapping Stop-And-Frisk, Arrest Data in MA (2017) (<span data-target='project-life-percent' class='project-link'>see more</span>).</li>
+      
+    
+      <li>Empor.co (2016-2018) (<span data-target='project-empor' class='project-link'>see more</span>).</li>
       
     
     </ul>
+        <p>
+ I also write <a href='http://thenoser.com/staff/Zachary-Horvitz'>satire</a> for the Brown Noser Satirical Newspaper!
+
+  </p>
   </div>
   
+    
+    <div class='project untoggled' id='project-citsci'>
+      
+      
+    <i class='back-btn material-icons'>keyboard_backspace</i>
+
+
+<h5>
+CORD19 Submission: Using Scibert-Embeddings augmented by MeSH words for COVID-19 literature clustering and retrieval.
+</h5>
+
+<p>
+
+
+Our submission to the CORD19 Kaggle Challenge embedding papers by extracting SciBert embeddings for <a href='https://www.ncbi.nlm.nih.gov/mesh'>Medical Subject Headings</a> (MeSH) keywords. We employed our document embeddings for literature clustering and retrieval. 
+
+
+<p><b><a href='https://www.kaggle.com/emilymu/cord19-analysis-scibert-embeddings-on-mesh-words'>Submission</a></b></a>
+<p><b><a href='https://github.com/NaveenVSrinivasan/COVIDAnalysis'>Code</a></b></a>
+
+</p>
+
+<p>
+   <a href='https://naveenvsrinivasan.github.io/COVIDAnalysis/interactives/vis_mesh.html'><img src='media/covid.png' width="50%" height="50%"/></a>
+</p>
+<p>
+</p>
+
+      
+    </div>
+    
+    <div class='project untoggled' id='project-exosim'>
+      
+      
+    <i class='back-btn material-icons'>keyboard_backspace</i>
+
+
+<h5>
+Perscriptive Analytics: Transportation Logistics - 1st Place.
+</h5>
+
+<p>
+
+Our local search algorithm for Vehicle Routing placed 1st in our <a href='https://cs.brown.edu/courses/info/csci2951-o/'>Prescriptive Analystics</a> course. Our approach combined simmulated annealing with evolutionary algorithms; at a high-level, we ran simulating annealing in parallel for the top-k feasible solutions, and, each time, decayed the initial temperatures using a hyperbolic function. 
+
+We also clustered candidate problems to determine optimal hyperparameter configuations.
+
+<p><b><a href='https://docs.google.com/presentation/d/1kw0vMAQAzzd65B6p-ifKcWchaOSwqRuAXN4z_VFJHIA/edit?usp=sharing'>Slides</a></b></a>
+<p><b><a href='https://github.com/aanshshah/vehicle_routing_problem'>Code</a></b></a>
+
+</p>
+
+<p>
+</p>
+
+      
+    </div>
+    
+    <div class='project untoggled' id='project-grading-app'>
+      
+      
+    <i class='back-btn material-icons'>keyboard_backspace</i>
+
+
+<h5>Star Trek GPT-2</h5>
+
+<p>
+   For father's day, I fine-tuned <a href=https://github.com/huggingface/transformers>HuggingFace</a>'s pretrained GPT-2 on all episode scripts from the original series.
+</p>
+
+<p><b><a href=''>Live Demo (Coming Soon)</a></b></p>
+<p><b><a href=''>Code (Coming Soon)</a></b></p>
+
+
+</p>
+
+<p>
+   <img src='media/startrek.png' width="30%" height="30%"/>
+</p>
+<p>
+</p>
+
+      
+    </div>
+    
+    <div class='project untoggled' id='project-thrust-test'>
+      
+      
+    <i class='back-btn material-icons'>keyboard_backspace</i>
+
+
+<h5>Examining Regional Abortion Discourse in America Via Twitter</h5>
+
+<p>
+
+
+    For David Kerter's graduate Anthropology Demography course, I collected over 200 thousand geo-tagged Twitter posts related to "Abortion," and clustered regions at the state and county level. My results indicate that Twitter discourses correlate with both public support for legalizing abortion at the state level and reproductive policy at the city level. These discourses appear to capture the circulation of tweets through ideological networks, and messages that articulate opinions through pro-life and pro-choice frames. Additionally, my analyses indicates that these data-driven approaches, while far from perfect, have the potential to augment existing demographic data, and aid advocacy groups by identifying regions with dissonance between grassroots sentiment and law.
+
+</p>
+<p>
+
+    <a href="media/anth2300.pdf">Paper</a></p>
+    <p><a href="https://docs.google.com/presentation/d/1EgFkwR37hVs-A-TqO_Jfln_qHewTQUDmDG9qsM0xDHw/edit?usp=sharing">Slides</a>
+
+
+</p>
+
+      
+    </div>
+    
+    <div class='project untoggled' id='project-oakwood'>
+      
+      
+    <i class='back-btn material-icons'>keyboard_backspace</i>
+
+
+<h5>NeurIPs Reproducibility Challenge Submission:  "Sample-Efficient Deep Reinforcement Learning via Episodic Backward Update"
+</h5>
+
+<p>
+
+
+We participated in the <a href='https://reproducibility-challenge.github.io/neurips2019/'>NeurIPS 2019 Reproducibility Challenge</a>. We attempted to replicate the results from <a href='https://arxiv.org/pdf/1805.12375.pdf'>Sample-Efficient Deep Reinforcement Learning via Episodic Backward Update (Lee et al. 2019)</a>, with modest success.a
+
+<p><b><a href='media/ebu.pdf'>Submission</a></b></a>
+<p><b><a href='https://github.com/vedasunkara/EBUReproducibilityChallenge'>Code</a></b></a></[>
+<p><a><b><a href=https://openreview.net/forum?id=Byg5D65GTS>OpenReview</a></b>
+</p>
+
+
+<p>
+</p>
+
+      
+    </div>
+    
+    <div class='project untoggled' id='project-nsf'>
+      
+      
+    <i class='back-btn material-icons'>keyboard_backspace</i>
+
+
+<h5>Negotiating the Scientific: The Reconciliation of Top-Down and Bottom-Up Forces in the NSF),
+</h5>
+
+<p>
+The purpose of our paper is to chart how the National Science Foundation’s
+practices are crafted from both the “bottom-up forces” of the scientific community and
+the “top-down” decision-making that originates from other parts of the state.
+Specifically, we will explore how conflicting interpretations and goals interface, and how
+they are ultimately are reconciled, then embedded in organizational policy. To understand these processes, <b>we interviewed individuals ranging from Computer Science professors to former Assisant Diectors of the NSF</b>.</p>
+
+<p>
+We also applied a data-driven lens to piece together how the NSF's grand awarding practices materialize in identifiable trends. For example, we analyzed frequent n-grams in NSF grant data. A sample visualization of some of our results from the CISE Directorate can be found <a href='https://zacharyhorvitz.github.io/NSF-grant-analysis/visualizer.html'>here</a>.</p>
+
+<p>
+
+Ultimately, we found that ranking members of the organization are motivated by a deep sense of
+accountability to the scientific community, and interpret the advancement of knowledge
+as something innately in national interest. However, the NSF must contend with entities (e.g. Congress) that do not necessarily interpret a clear relationship between the two. Thus, the NSF
+must continually assure other parties of the the value in basic research and draft strategic
+priorities that align with the Executive Office. Through the language of “Broader
+Impact” and “Technical Merit” the foundation can simultaneously establish its role as a
+bastion of science, and as an influential organization that shapes society for the better.
+These terms also leave much to the interpretation of the scientific community, and
+provide breathing room within this complex political landscape.
+</p>
+
+<p><b><a href=''>Paper Unavailable (Pending Authorization)</a></b></a>
+</p>
+
+
+<p>
+</p>
+
+      
+    </div>
+    
+    <div class='project untoggled' id='project-this_site'>
+      
+      
+    <i class='back-btn material-icons'>keyboard_backspace</i>
+
+
+<h5>Uber Developed:
+
+The Implications and Contestations of Ride Hailing Business in South Africa</h5>
+
+
+<p>
+
+
+   <b>Summary:</b> In South Africa, Uber pivoting
+towards the role of economic developer; the ride-hailing application promotes a narrative
+wherein it is the provider of both job opportunities and socio-economic mobility. However,
+development is not an apolitical activity. In South Africa, Uber engages with a transportation
+architecture designed to differentiate classes of South African citizen. Uber’s interface with this
+constructed landscape, and attempt at extending it, accentuates systems of domination. Uber’s
+platform continues to reinscribe the racialized disparities with wealthy and poor; it affords the
+former with a convenient means of interacting with the landscape, inaccessible to the latter, and
+provides a means for transfiguring the unemployed into a highly controlled “flexible” labor
+source. However, the relation between Uber and transportation infrastructure is not
+unidirectional. In turn, South Africa’s reality imposes itself on the company, forcing to to adapt
+to an environment where it must contend with colonial associations, a corrupt police force, and
+overt violence.
+</p>
+<p>
+
+    <a href="media/smith_final.pdf">Paper</a></p>
+  
+
+
+</p>
+
+      
+    </div>
+    
+    <div class='project untoggled' id='project-melanie-falick'>
+      
+      
+    <i class='back-btn material-icons'>keyboard_backspace</i>
+
+
+<h5>Quantifying Ideology in the Rhode Island Senate</h5>
+
+<p>
+   As Associate Director of Brown Political Review's Data Board, I wrote and oversaw data-driven projects and articles. In <u>Quantifying Ideology: Data-driven philosophical scales</u>, I applied dimensonality reduction to legislator voting records to tease out ideological clusters in the Rhode Island Senate.
+</p> 
+<p>
+    <a href="https://issuu.com/brownpoliticalreview/docs/bpr_fall_2018_issue_1/48">Article</a>
+</p>
+<img src='media/bpr.png' height='70%' width='70%'/>
+
+      
+    </div>
+    
+    <div class='project untoggled' id='project-hveto'>
+      
+      
+    <i class='back-btn material-icons'>keyboard_backspace</i>
+
+
+<h5>CS1400 AI TRON Compeition -2nd Place</h5>
+
+<p>
+   My submission to the CS1400 TRON competition placed second out of 22 teams. The class environment was a modified version of the original <a href='https://en.wikipedia.org/wiki/Tron_(video_game)'>TRON game</a>, where players compete to wall off their opponent.
+   My implementation appled MiniMax with Alpha-Beta pruning, and evalued states with the Voronoi heuristic weighted towards power-ups. To handle stochastic power-up effects, I modified the vanilla MiniMax algorithm into Expecti-Max by running multiple expansions for each random state transition, anding compute the value of an action in expectation.
+</p>
+
+
+      
+    </div>
+    
+    <div class='project untoggled' id='project-life-percent'>
+      
+      
+    <i class='back-btn material-icons'>keyboard_backspace</i>
+
+
+<h5> ACLU Tech for Libery: Mapping Stop-And-Frisk, Arrest Data in Massachusetts
+</h5>
+
+<p>
+
+As an intern with the Tech For Liberty Team, I analyzed Boston Police Department stop-and-frisk data and Massauchusetts low-level arrest records obtained by the ACLU of Massachusetts. Additionally, I built internal web tools to visualize these records, and collate them with external data sources (e.g. Census data).
+
+My work was part of a broader push by the ACLU to elucidate <a href='https://www.nyclu.org/en/publications/shattered-continuing-damaging-and-disparate-legacy-broken-windows-policing-new-york'>'broken windows'</a> policing tactics, which disproportionately target marginalized communities, and people of color.
+</p>
+
+
+<p>
+</p>
+
+      
+    </div>
+    
+    <div class='project untoggled' id='project-empor'>
+      
+      
+    <i class='back-btn material-icons'>keyboard_backspace</i>
+
+
+<h5> Empor.co
+</h5>
+
+<p>
+Beginning in the summer of 2016, I co-founded a start-up with my close friend Lucas Rosenblatt. We started by building a mobile application for college students to buy and exchange goods and services. However, with the advent of Facebook buying-and-selling pages, we pivoted to a clothing recommender engine. Our application learned user's shoe preferences to make personalized recommendations.
+
+While Lucas and I ultimately disbanded our company, we are thankful for the invaluable (and humbling) opportunity to build a commericalizable product from scratch, and for our newfound appreciation of a robust tech stack.
+
+<p>
+</p>
+<img src='media/empor.jpg' height='20%' width='20%'/>
+
+
+      
+    </div>
+    
+  
+
+
+
 </div>
       
-        <h5>Contact</h5>
         <div id='contact-div' class='content-card card green white'>
-  <table>
+  <img src='media/morocco.jpg' alt='Morocco picture'/ style="float:left;">
+  <table >
     <tr>
-      <td>Email:</td>
+      <td></td>
+      <td><b>Email:</b></td>
       <td>
-        <a href='mailto:eliberkowitz@gmail.com' target='_self'>
-          eliberkowitz@gmail.com
+        <a href='mailto:zacharyhorvitz@gmail.com' target='_self'>
+          zacharyhorvitz@gmail.com
         </a>
       </td>
     </tr>
-    <img src='media/god-pic.jpg' alt='Face picture'/>
+    <tr>
+          <td></td>
+
+      <td><b>LinkedIn:</b></td>
+      <td>
+        <a href='https://www.linkedin.com/in/zachary-horvitz/'>
+        zachary-horvitz
+        </a>
+      </td>
+    </tr>
+     <tr>
+           <td></td>
+
+      <td><b>GitHub:</b></td>
+      <td>
+        <a href='https://github.com/zacharyhorvitz' >
+          @zacharyhorvitz
+        </a>
+      </td>
+       </tr>
+         
   </table>
-</div>
 </div>
       
     </div>
           
       </div>
-    </body>
-    <script type="text/javascript">
-      $('#navbar').click(function(x) {
-        as = $($(x.target).children('span').context);
-        if (as.length != 1) {
-          return;
+      <script type='text/javascript'>
+        doc = $(document);
+        docWidth = doc.width();
+        docHeight = doc.height();
+        if (docWidth < 500 || docHeight < 440) {
+          document.location = 'mobile.html';
         }
-        scrollTo(
-          {
-            top: $(as.eq(0).data('target')).offset().top-130,
-            behavior: 'smooth'
-          }
-        );
-      });
-    </script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $('.project-link').click(function(event) {
-          var lnk = $(event.target);
-          a = $('#' + lnk.data('target'));
-          a.toggleClass('hidden-project');
-          if (a.hasClass('hidden-project')) {
-            lnk.text('see more');
-          }
-          else {
-            lnk.text('hide');
-          }
-        });
-      });
-    </script>
+        else {
+          $(document).ready(function() {
+            start('ZACHARY HORVITZ');
+          });
+          $('.project-link').map(function(i, elem) {
+            var e = $(elem);
+            var target = e.data('target');
+            e.click(function(){
+              projectTransition(target);
+            });
+          });
+          $('.back-btn').click(function() {
+            projectTransition('#project-main');
+          });
+        }
+      </script>
+    </body>
 <!--
-Copyright November 2015 Elias Berkowitz.
+Copyright November 2015 Zachary Horvitz.
 Coded from scratch.
 -->
 </html>

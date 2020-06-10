@@ -8,63 +8,86 @@ mobile_template = env.get_template('mobile_template.jhtml')
 
 
 class Config:
-    page_author = 'Elias Berkowitz'
-    first_name = 'Elias'
-    last_name = 'Berkowitz'
+    page_author = 'Zachary Horvitz'
+    first_name = 'Zachary'
+    last_name = 'Horvitz'
     full_name = first_name + ' ' + last_name
-    email = 'eliberkowitz@gmail.com'
-    tags = [full_name, last_name, 'Eli Berkowitz', 'Programming',
-            'Applied Mathematics', 'Computer Science Education',
-            'Education']
+    email = 'zacharyhorvitz@gmail.com'
+    tags = [full_name, last_name, 'Zachary Horvitz', 'Machine Learning',
+            'NLG', 'NLP','Deep Learning','Optimization','Computer Science','Anthropology']
 
     sub_pages = [('about.jhtml', 'About'),
                  ('resume.jhtml', 'Resum&eacute;'),
-                 ('projects.jhtml', 'Projects'),
+                 ('research.jhtml', 'Research'),
+                 ('projects.jhtml', 'Work'),
                  ('contact.jhtml', 'Contact')
+
                  ]
 
     projects = [
                 ('citsci',
                  'citsci.jhtml',
-                 'Web system for Bard College\'s Citizen Science program'),
+                 'CORD-19 Kaggle Challenge (2020)'),
+                     ('exosim',
+                 'exosim.jhtml',
+                 'CS2951-O Transportation Logistics, 1st Place Local Search Algorithm (2020)'
+                 ),
                 ('grading-app',
                  'grading_app.jhtml',
-                 'Grading app for computer science courses at Brown University [Flask]'
+                 'Star Trek GPT-2 (2019)'
                  ),
-                ('exosim',
-                 'exosim.jhtml',
-                 'Create and observe your own solar system [p5.js]'
-                 ),
-
                 ('thrust-test',
                  'thrust_test_app.jhtml',
-                 ('Web app developed to provide an API for testing '
-                  'rocket motors and visualizing thrust results [Flask, Raspberry Pi]')
+                 'Examining Regional Abortion Discourse in America via Twitter Data (2019)'
                  ),
 
-                ('hveto',
-                 'hveto.jhtml',
-                 ('Work for LIGO '
-                  '(Laser Interfrometric Gravitational-Wave Observatory) [Python]')
-                 ),
 
-                ('oakwood',
+                 ('oakwood',
                  'oakwood.jhtml',
-                 'Internal-use web apps for Oakwood Friends School [Google Apps Script]'),
+                 'NeurIPs Reproducibility Challenge:  "Sample-Efficient Deep Reinforcement Learning via Episodic Backward Update" (2019)'),
+
+                ('nsf',
+                 'nsf.jhtml',
+                 'Negotiating the Scientific: The Reconciliation of Top-Down and Bottom-Up Forces in the NSF (2019)'),
 
                 ('this_site',
                  'this_site.jhtml',
-                 'This website [Python, Jinja, Netlify]'),
+                 'Uber Developed: The Ride Hailing Business in South Africa (2018)'),
+
+                # ('melanie-falick',
+                #  'http://thenoser.com/staff/Zachary-Horvitz',
+                #  'Satirical Writing'),
 
                 ('melanie-falick',
                  'melanie_falick.jhtml',
-                 'Redesign of Melanie Falick\'s website [Squarespace]'),
+                 'Quantifying Ideology in the Rhode Island Senate (2018)'),
+                 #     ('melanie-falick',
+                 # 'melanie_falick.jhtml',
+                 # 'First Drafts DataVis Platform'),
 
-                ('life-percent',
+                 #                 ('melanie-falick',
+                 # 'melanie_falick.jhtml',
+                 # 'Conspiracies and the Deep State'),
+
+                              ('hveto',
+                 'hveto.jhtml',
+                 'CS1400 TRON Competition, 2nd Place (2018)'),
+
+                               ('life-percent',
                  'life_percent.jhtml',
-                 ('Life Percent Website: Shows the '
-                  'user the percent of their life that has passed [Javascript]')
-                 )
+                 'ACLU Tech for Libery: Mapping Stop-And-Frisk, Arrest Data in MA (2017)'),
+
+                  ('empor',
+                 'empor.jhtml',
+                 'Empor.co (2016-2018)')
+
+                #   ,
+
+                # ('life-percent',
+                #  'life_percent.jhtml',
+                #  ('Life Percent Website: Shows the '
+                #   'user the percent of their life that has passed [Javascript]')
+                #  )
                 ]
 
 
@@ -75,6 +98,6 @@ with open('site/index.html', 'w') as f:
     f.write(rendered_template)
 
 with open('site/mobile.html', 'w') as f:
-    f.write(rendered_mobile)
+    f.write(rendered_template)
 
 print('recompiled')

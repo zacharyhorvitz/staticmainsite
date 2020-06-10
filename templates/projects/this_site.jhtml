@@ -1,13 +1,31 @@
 {% extends "project_base.jhtml" %}
-{% block title %}This site{% endblock %}
+{% block title %}Uber Developed:
+
+The Implications and Contestations of Ride Hailing Business in South Africa{% endblock %}
 {% block content %}
+
 <p>
-    This site is built using Python into a static site. You can see the code for it on Github.
+
+
+   <b>Summary:</b> In South Africa, Uber pivoting
+towards the role of economic developer; the ride-hailing application promotes a narrative
+wherein it is the provider of both job opportunities and socio-economic mobility. However,
+development is not an apolitical activity. In South Africa, Uber engages with a transportation
+architecture designed to differentiate classes of South African citizen. Uber’s interface with this
+constructed landscape, and attempt at extending it, accentuates systems of domination. Uber’s
+platform continues to reinscribe the racialized disparities with wealthy and poor; it affords the
+former with a convenient means of interacting with the landscape, inaccessible to the latter, and
+provides a means for transfiguring the unemployed into a highly controlled “flexible” labor
+source. However, the relation between Uber and transportation infrastructure is not
+unidirectional. In turn, South Africa’s reality imposes itself on the company, forcing to to adapt
+to an environment where it must contend with colonial associations, a corrupt police force, and
+overt violence.
 </p>
 <p>
-    Code: <a href="https://github.com/berkowitze/staticmainsite">Github</a>
-</p>
-<p>
-    Website: <a href="http://www.eliasberkowitz.com">eliasberkowitz.com</a>
+
+    <a href="media/smith_final.pdf">Paper</a></p>
+  
+
+
 </p>
 {% endblock %}

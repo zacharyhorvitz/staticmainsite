@@ -1,20 +1,22 @@
 {% extends "project_base.jhtml" %}
 {% block title %}
-Web system for Bard College's Citizen Science program
+CORD19 Submission: Using Scibert-Embeddings augmented by MeSH words for COVID-19 literature clustering and retrieval.
 {% endblock %}
 
 {% block content %}
 <p>
-    Over the winter break, all Bard College firstyears participate in Citizen Science. Every student, when home for the break, takes a water sample and brings it back to campus to be analyzed (by the students themselves). Throughout the process, they upload images, location data, and observations.
+
+
+Our submission to the CORD19 Kaggle Challenge embedding papers by extracting SciBert embeddings for <a href='https://www.ncbi.nlm.nih.gov/mesh'>Medical Subject Headings</a> (MeSH) keywords. We employed our document embeddings for literature clustering and retrieval. 
+
+
+<p><b><a href='https://www.kaggle.com/emilymu/cord19-analysis-scibert-embeddings-on-mesh-words'>Submission</a></b></a>
+<p><b><a href='https://github.com/NaveenVSrinivasan/COVIDAnalysis'>Code</a></b></a>
+
 </p>
+
 <p>
-    I wrote this web system to faciliate the entire process, from data upload to visualization. It is built using Flask on Google Cloud Platform (App Engine, Cloud SQL (Postgres), Storage). The web system utilizes a wide array of both frontend architecture (image editing, file dragging, downloading, uploading, and zipping, mapping tools, etc.) and backend architecture (CAS authentication, image compression and conversion, etc.). In addition, the system uses the ArcGIS Javascript API to give the public an interface to view the data.
-</p>
-<p>
-    Data map: <a href="https://citsciwater.bard.edu/map">citsciwater.bard.edu/map</a>
-</p>
-<p>
-    <img src='media/citsci.png' width="30%" height="30%"/>
+   <a href='https://naveenvsrinivasan.github.io/COVIDAnalysis/interactives/vis_mesh.html'><img src='media/covid.png' width="50%" height="50%"/></a>
 </p>
 <p>
 </p>

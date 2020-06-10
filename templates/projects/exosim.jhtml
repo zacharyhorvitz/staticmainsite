@@ -1,21 +1,20 @@
 {% extends "project_base.jhtml" %}
 {% block title %}
-Exosim
+Perscriptive Analytics: Transportation Logistics - 1st Place.
 {% endblock %}
 
 {% block content %}
 <p>
-    This website (written in pure Javascript using the processing p5.js library) allows you to create your own solar system. You can see the planets orbiting their star - all objects interact with each other gravitationally. Additionally, you can see what the data measured on Earth to observe the exoplanets would look like as the planets block the light of their star when they pass in front of it.
+
+Our local search algorithm for Vehicle Routing placed 1st in our <a href='https://cs.brown.edu/courses/info/csci2951-o/'>Prescriptive Analystics</a> course. Our approach combined simmulated annealing with evolutionary algorithms; at a high-level, we ran simulating annealing in parallel for the top-k feasible solutions, and, each time, decayed the initial temperatures using a hyperbolic function. 
+
+We also clustered candidate problems to determine optimal hyperparameter configuations.
+
+<p><b><a href='https://docs.google.com/presentation/d/1kw0vMAQAzzd65B6p-ifKcWchaOSwqRuAXN4z_VFJHIA/edit?usp=sharing'>Slides</a></b></a>
+<p><b><a href='https://github.com/aanshshah/vehicle_routing_problem'>Code</a></b></a>
+
 </p>
-<p>
-    Website: <a href="https://exosim.netlify.com">exosim.netlify.com</a>
-</p>
-<p>
-    Code: <a href="https://github.com/berkowitze/exosim">Github</a>
-</p>
-<p>
-    <img src='media/exosim.png' width="50%" height="50%"/>
-</p>
+
 <p>
 </p>
 {% endblock %}

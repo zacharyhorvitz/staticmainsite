@@ -1,0 +1,33 @@
+<div id='about-div' class='content-card card white active'>
+  <p class='no-bottom-margin'>
+
+
+  Research 
+
+  </p>
+
+ <p>
+    <ul>
+  <li>Ling Priors for RL</li>
+  <li>Context-Driven Satire</li>
+  <li>EntElmo for Mental State Inference</li>
+  <li>Figure Seer</li>
+</ul>
+ </p>
+
+
+
+ <p>
+  Teaching 
+
+  </p>
+
+ <p>
+    <ul>
+  <li>Deep Learning</li>
+  <li>Computational Linguistics</li>
+</ul>
+ </p>
+
+
+</div>

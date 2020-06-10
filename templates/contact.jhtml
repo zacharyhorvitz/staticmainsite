@@ -1,14 +1,35 @@
 <div id='contact-div' class='content-card card green white'>
-  <table>
+  <img src='media/morocco.jpg' alt='Morocco picture'/ style="float:left;">
+  <table >
     <tr>
-      <td>Email:</td>
+      <td></td>
+      <td><b>Email:</b></td>
       <td>
         <a href='mailto:{{ config.email }}' target='_self'>
           {{ config.email }}
         </a>
       </td>
     </tr>
-    <img src='media/god-pic.jpg' alt='Face picture'/>
+    <tr>
+          <td></td>
+
+      <td><b>LinkedIn:</b></td>
+      <td>
+        <a href='https://www.linkedin.com/in/zachary-horvitz/'>
+        zachary-horvitz
+        </a>
+      </td>
+    </tr>
+     <tr>
+           <td></td>
+
+      <td><b>GitHub:</b></td>
+      <td>
+        <a href='https://github.com/zacharyhorvitz' >
+          @zacharyhorvitz
+        </a>
+      </td>
+       </tr>
+         
   </table>
-</div>
 </div>

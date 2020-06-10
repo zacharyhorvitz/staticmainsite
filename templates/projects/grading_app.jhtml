@@ -1,12 +1,19 @@
 {% extends "project_base.jhtml" %}
-{% block title %}CS Course Grading App{% endblock %}
+{% block title %}Star Trek GPT-2{% endblock %}
 {% block content %}
 <p>
-    I developed a grading app for use in <a href="https://cs.brown.edu/courses/csci0111/">CSCI0111 in Fall 2018</a>, a course I was a head TA of and helped develop. The app allows computer science courses to handle student handin, automated and commented grading, sending grade reports to students, and manage grades in a streamlined, customizable, and FERPA-compliant manner.
+   For father's day, I fine-tuned <a href=https://github.com/huggingface/transformers>HuggingFace</a>'s pretrained GPT-2 on all episode scripts from the original series.
 </p>
-<p>The software was also used for <a href="http://cs.brown.edu/courses/csci1470/">CSCI 1470 in Fall 2019</a>, with 40 teaching assistants grading handins for 400 students.</p>
+
+<p><b><a href=''>Live Demo (Coming Soon)</a></b></p>
+<p><b><a href=''>Code (Coming Soon)</a></b></p>
+
+
+</p>
+
 <p>
-  <a href="https://www.youtube.com/watch?v=sIEIbEAwyfM">Demo Video</a>
+   <img src='media/startrek.png' width="30%" height="30%"/>
 </p>
-<img src='media/grading-app.png' height='70%' width='70%'/>
+<p>
+</p>
 {% endblock %}
